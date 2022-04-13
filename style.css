@@ -1,4 +1,7 @@
-
+:root {
+  --my-background-color: rgb(176, 206, 250);
+  --my-color:rgb(120, 49, 49);;
+}
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -8,50 +11,69 @@ body {
   margin-right: 0px;
 }
 
+body h2 {
+  color: #373737; 
+}
+
 header {
-
-    background-color: rgb(176, 206, 250);
+    background-color: var(--my-background-color);
     padding-top: 30px;
-    padding-bottom: 50px;
-
+    padding-bottom: 60px;
 }
 
 main {
-
     padding-top: 50px;
     background-color: rgb(176, 176, 176);
     padding-bottom: 40px;
-
 }
 
 footer {
-
-    background-color: rgb(176, 206, 250);
+    background-color: var(--my-background-color);
     padding-top: 30px;
     padding-bottom: 30px;
 
 }
 
-.logo {
+footer a p h2 {
+  color: #373737;
+}
 
+a::before {
+color: #373737;
+}
+
+a::after {
+  color: white;
+}
+
+.impressum {
+text-align: center;
+list-style: none;
+}
+
+.map {
+
+justify-content: center;
+align-items: center;
+}
+
+
+
+.logo {
     position: absolute;
     width: 300px;
     height: 140px;
     left: 11px;
     top: 13px;
-
 }
 
 #aktiv {
-
-  color: rgb(120, 49, 49);
-
+  color: var(--my-color);
 }
-
 
 #navbar {
     overflow: hidden;
-    background-color: rgb(176, 206, 250);
+    background-color: var(--my-background-color);
   }
   
   #navbar a {
@@ -79,41 +101,51 @@ footer {
   }
 
   #navbar a:hover {
-    color: rgb(120, 49, 49);
+    color: var(--my-color);
+
   }
-
-
 
   #navbar a:active {
-
-    color: rgb(120, 49, 49);
-
+    color: var(--my-color);
   }
-
-
 
   .thumbnail {
     width: 218px;
   }
 
   .hinweis::after {
-  content: "  <- Hier findest du Videos die zu dir passen.";
-  color: rgb(120, 49, 49);
-  font-size: 20px;
+    content: "  <- Hier findest du Videos die zu dir passen.";
+    color: var(--my-color);
+    font-size: 20px;
   }
 
 
   video {
-  height: 360; 
-  width: 640;
+    height: 360; 
+    width: 640;
+  }
+
+  @keyframes pulse {
+    5% {
+      color: var(--my-color);
+    }
+  }
+  .pulse {
+    width: fit-content;
+    padding: 0px;
+    animation: pulse 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    text-align: center;
   }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   
   .video {
-    width: 500px;
-    max-width: 100%;
+    width: 50%;
+    max-width: 50%;
+    align-items: center;
   }
 
   body {
@@ -121,28 +153,32 @@ footer {
     max-width: 100%;
   }
 
+  .logo {
+    width: 30%;
+    height: 30%;
+  }
+
   #navbar {
     overflow: hidden;
-    background-color: rgb(176, 206, 250);
+    background-color: var(--my-background-color);
+    width: 80%;
+    max-width: 80%;
+    padding-top: 30px;
   }
   
   #navbar a {
-    float: right;
     display: block;
     color: #454545;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 10px;
+    margin-top: 50px;
   }
 
-  .logo {
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    left: 11px;
-    top: 13px;
 
-}
+
+
+
 
 
 }
