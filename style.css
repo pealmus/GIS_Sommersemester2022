@@ -31,7 +31,6 @@ footer {
     background-color: var(--my-background-color);
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
 
 footer a p h2 {
@@ -52,12 +51,12 @@ list-style: none;
 }
 
 .map {
-
 justify-content: center;
 align-items: center;
+padding-left: 30%;
+padding-right: 50%;
+padding-top: 20px;
 }
-
-
 
 .logo {
     position: absolute;
@@ -65,6 +64,11 @@ align-items: center;
     height: 140px;
     left: 11px;
     top: 13px;
+}
+
+#standort {
+text-align: center;
+padding-top: 30px;
 }
 
 #aktiv {
@@ -137,6 +141,8 @@ align-items: center;
     animation-iteration-count: infinite;
     position: relative;
     text-align: center;
+    padding-left: 40%;
+    padding-top: 20px;
   }
 
 
