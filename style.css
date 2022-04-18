@@ -1,0 +1,193 @@
+:root {
+  --my-background-color: rgb(176, 206, 250);
+  --my-color:rgb(120, 49, 49);;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+body h2 {
+  color: #373737; 
+}
+
+header {
+    background-color: var(--my-background-color);
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+main {
+    padding-top: 50px;
+    background-color: rgb(176, 176, 176);
+    padding-bottom: 40px;
+}
+
+footer {
+    background-color: var(--my-background-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer a p h2 {
+  color: #373737;
+}
+
+a::before {
+color: #373737;
+}
+
+a::after {
+  color: white;
+}
+
+.impressum {
+text-align: center;
+list-style: none;
+}
+
+.map {
+justify-content: center;
+align-items: center;
+padding-left: 30%;
+padding-right: 50%;
+padding-top: 20px;
+}
+
+.logo {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+    left: 11px;
+    top: 13px;
+}
+
+#standort {
+text-align: center;
+padding-top: 30px;
+}
+
+#aktiv {
+  color: var(--my-color);
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: var(--my-background-color);
+  }
+  
+  #navbar a {
+    float: right;
+    display: block;
+    color: #454545;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  #navbar a:hover {
+    color: var(--my-color);
+
+  }
+
+  #navbar a:active {
+    color: var(--my-color);
+  }
+
+  .thumbnail {
+    width: 218px;
+  }
+
+  .hinweis::after {
+    content: "  <- Hier findest du Videos die zu dir passen.";
+    color: var(--my-color);
+    font-size: 20px;
+  }
+
+
+  video {
+    height: 360; 
+    width: 640;
+  }
+
+  @keyframes pulse {
+    5% {
+      color: var(--my-color);
+    }
+  }
+  .pulse {
+    width: fit-content;
+    padding: 0px;
+    animation: pulse 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    text-align: center;
+    padding-left: 40%;
+    padding-top: 20px;
+  }
+
+
+@media (max-width: 1200px) {
+  
+  .video {
+    width: 50%;
+    max-width: 50%;
+    align-items: center;
+  }
+
+  body {
+    width:100%;
+    max-width: 100%;
+  }
+
+  .logo {
+    width: 30%;
+    height: 30%;
+  }
+
+  #navbar {
+    overflow: hidden;
+    background-color: var(--my-background-color);
+    width: 80%;
+    max-width: 80%;
+    padding-top: 30px;
+  }
+  
+  #navbar a {
+    display: block;
+    color: #454545;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 50px;
+  }
+
+
+
+
+
+
+
+}
+
+
+
