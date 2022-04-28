@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
     <title>Erklärvideo</title>
 </head>
 <body>
@@ -31,7 +32,28 @@
             </div>
         </div>
         <h2>Die Lernplattform schnell erklärt</h2>
-        <input type="kommentare" placeholder="Kommentare" name="kommentare">
+        <input type="kommentare" placeholder="Kommentare" name="kommentare"> <button>Posten</button>
+        <div class="kommentare"><h3>Kommentare</h3>
+        
+        </div>
+
+
+        <form id="form" action="javascript:void('');" class="add_comment">
+
+            <label>Name
+              <input id="name" type="string" name="name">
+            </label><br>
+            <label>Email
+              <input id="email" type="string" name="email">
+            </label><br>
+            <label>Comment
+             <textarea id="comment" name="comment"></textarea>
+            </label>
+            <input type="submit" value="Add Comment">
+          </form>
+
+          </form>
+        
     </main>
 
 

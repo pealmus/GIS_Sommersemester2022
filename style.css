@@ -129,6 +129,12 @@ padding-top: 30px;
     width: 640;
   }
 
+  .kommentare {
+
+    border-color: black;
+
+  }
+
   @keyframes pulse {
     5% {
       color: var(--my-color);
