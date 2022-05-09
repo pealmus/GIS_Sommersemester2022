@@ -1,6 +1,6 @@
 :root {
-  --my-background-color: rgb(176, 206, 250);
-  --my-color:rgb(120, 49, 49);;
+  --my-background-color: rgb(153, 153, 153);
+  --my-color:rgb(135, 21, 46);;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 body h2 {
-  color: #373737; 
+  color: rgb(35, 35, 35); 
 }
 
 header {
@@ -23,9 +23,16 @@ header {
 
 main {
     padding-top: 50px;
-    background-color: rgb(176, 176, 176);
+    background-color: rgb(165, 165, 165);
     padding-bottom: 40px;
 }
+
+p {
+color: rgb(50, 50, 50);
+
+}
+
+
 
 footer {
     background-color: var(--my-background-color);
@@ -127,6 +134,14 @@ padding-top: 30px;
   video {
     height: 360; 
     width: 640;
+  }
+
+  .kom {
+    height: 10%;
+    width: 30%;
+    background-color: white;
+    border-color: black;
+
   }
 
   .kommentare {

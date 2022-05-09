@@ -32,28 +32,16 @@
             </div>
         </div>
         <h2>Die Lernplattform schnell erklärt</h2>
-        <input type="kommentare" placeholder="Kommentare" name="kommentare"> <button>Posten</button>
-        <div class="kommentare"><h3>Kommentare</h3>
-        
+        <div><h3>Kommentare</h3>
+        <textarea id="kommentare" placeholder="Kommentare"></textarea> <br>
+        <input type="button" value="Speichern" onclick="speichern()">
+        <div class="kom">
+            <p id="kom"></p>
+            <p id="comments"></p>
         </div>
 
 
-        <form id="form" action="javascript:void('');" class="add_comment">
 
-            <label>Name
-              <input id="name" type="string" name="name">
-            </label><br>
-            <label>Email
-              <input id="email" type="string" name="email">
-            </label><br>
-            <label>Comment
-             <textarea id="comment" name="comment"></textarea>
-            </label>
-            <input type="submit" value="Add Comment">
-          </form>
-
-          </form>
-        
     </main>
 
 
